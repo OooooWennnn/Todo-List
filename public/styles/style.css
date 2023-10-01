@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Sedgwick+Ave+Display&family=Source+Code+Pro:wght@300;400&display=swap');
+
+html {
+    min-height: 100%;
+}
+
+body {
+    background-image: linear-gradient(#D7BBF5, #EDE4FF);
+    /* background-image: url("/styles/mcdonalds_logo.webp");
+    background-size: 70% auto;
+    background-repeat: no-repeat;
+    background-position: center center; */
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Source Code Pro', monospace;
+}
+
+li {
+    list-style-type: none;
+}
+
+.menu-item {
+    text-decoration: none;
+    margin: 10px 0px;
+    font-size: 20px;
+    padding: 8px 20px;
+    color: white;
+    text-shadow: 2px 2px 7px #000000;
+}
+
+.menu-item:hover {
+    color: black;
+    background-color: azure;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    padding: 0;
+}
+
+.box {
+    background-color: white;
+    margin: 50px auto;
+    width: 400px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px -5px;
+}
+
+.title{
+    background-color: #A076F9;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.item {
+    height: 70px;
+    display: flex;
+    gap: 15px;
+    border-bottom: 1px solid lightgray;
+}
+
+.checkbox {
+    margin: 20px;
+}
+
+.box p {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.add-item {
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    width: 75%;
+    height: 90%;
+    text-align: center;
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+
+.text:focus {
+    border-bottom: 2px solid #D7BBF5;
+}
+
+input::placeholder{
+    color: gray;
+    opacity: 0.5;
+}
+
+.add-item-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 30px;
+    border: none;
+    height: 50px;
+    width: 50px;
+    background-color: #D7BBF5;
+    color: white;
+    cursor: pointer;
+    padding: 0;
+    line-height: 50px;
+    padding-bottom: 4px;
+}
+
+.remove-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.delete-all-btn{
+    padding: 10px 30px;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    opacity: 0.8;
+    color: gray;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+}
